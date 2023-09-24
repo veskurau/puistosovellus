@@ -1,5 +1,7 @@
+<h1>Tervetuloa puistosovellukseen!</h1>
 {% if session.username %}
-<p>Olet kirjautunut nimellä {{ session.username }}</p>
+<p>Olet kirjautunut sisään käyttäjätunnuksella {{ session.username }}</p>
+<a href="/parks">Näytä puistot</a>
 <a href="/logout">Kirjaudu ulos</a>
 {% else %}
 <form action="/login" method="POST">
@@ -9,4 +11,7 @@
 <input type="password" name="password"></p>
 <input type="submit" value="Kirjaudu">
 </form>
+
+<br>
+Jos olet uusi käyttäjä: <a href="/register">Luo käyttäjätunnus</a>
 {% endif %}
