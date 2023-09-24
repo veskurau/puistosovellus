@@ -15,6 +15,7 @@ CREATE TABLE parks (
 CREATE TABLE reviews (
     id SERIAL PRIMARY KEY,
     comment TEXT,
-    points INTERGER,
-    parks_id INTERGER REFERENCES parks
+    points INTEGER,
+    park_id INTEGER REFERENCES parks,
+    user_id INTEGER REFERENCES users
 );
