@@ -33,7 +33,7 @@ Sovellus sisältää seuraavia ominaisuuksia:
 - Seuraavaksi myös lisätään sisältöä parks.html ja muille sivuille, joiden kautta pääsee tarkastelemaan tietokannassa olevia puistoista ja arvosteluista sekä lisäämään arvosteluita
 
 ## Kuinka käyttää ja testata sovellusta komentoriviltä
-**1)** Aluksi kopioi projekti konneellesi GitHubista
+**1)** Aluksi kopioi projekti koneellesi GitHubista
 
 
 **2)** Luo Pythonin virtuaaliympäristö projektikansioon:
