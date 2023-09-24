@@ -35,7 +35,7 @@ Sovellus sisältää seuraavia ominaisuuksia:
 ## Kuinka käyttää ja testata sovellusta komentoriviltä
 Aluksi kopioi projekti konneellesi GitHubista. 
 
-Luo Pythonin virtuaaliympäristö projektikansioon:
+1) Luo Pythonin virtuaaliympäristö projektikansioon:
 
 ```bash
 python3 -m venv venv
