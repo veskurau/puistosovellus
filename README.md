@@ -33,36 +33,37 @@ Sovellus sisältää seuraavia ominaisuuksia:
 - Seuraavaksi myös lisätään sisältöä parks.html ja muille sivuille, joiden kautta pääsee tarkastelemaan tietokannassa olevia puistoista ja arvosteluista sekä lisäämään arvosteluita
 
 ## Kuinka käyttää ja testata sovellusta komentoriviltä
-Aluksi kopioi projekti konneellesi GitHubista. 
+**1)** Aluksi kopioi projekti konneellesi GitHubista
 
-1) Luo Pythonin virtuaaliympäristö projektikansioon:
+
+**2)** Luo Pythonin virtuaaliympäristö projektikansioon:
 
 ```bash
 python3 -m venv venv
 ```
 
-2) Ja käynnistä virtuaaliympäristö:
+**3)** Ja käynnistä virtuaaliympäristö:
 
 ```bash
 source venv/bin/activate
 ```
 
-3) Ympäristön riippuvuudet löytyvät tiedostosta [requirements.txt](./requirements.txt). 
+**4)** Ympäristön riippuvuudet löytyvät tiedostosta [requirements.txt](./requirements.txt). 
 Nämä voit asentaa kerralla:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4) Koodi käyttää ympäristömuuttujia, jotka on tallennettu .env tiedostoon. GitHubiin tiedostoa ei ole kuitenkaan jaettu, mutta sieltä löytyy tiedosto [.env.example](./env.example), josta voit nähdä mitä ympäristömuuttujia on käytetty. Voit nimetä tiedoston uudestaan .env ja päivittää rivin DATABASE_URL=postgresql:///user, niin että user on käyttäjätunuksesi/tietokannan nimi. 
+**5)** Koodi käyttää ympäristömuuttujia, jotka on tallennettu *.env* tiedostoon. GitHubiin tiedostoa ei ole kuitenkaan jaettu, mutta sieltä löytyy tiedosto [.env.example](./env.example), josta voit nähdä mitä ympäristömuuttujia on käytetty. Voit nimetä tiedoston uudestaan *.env* ja päivittää rivin *DATABASE_URL=postgresql:///user*, niin että *user* on käyttäjätunuksesi/tietokannan nimi.
 
-5) Käytössä on Postgres-tietokanta. Skeema löytyy tiedostosta [schema.sql](./schema.sql). Pääset luomaan taulut tietokantaan: 
+**6)** Käytössä on Postgres-tietokanta. Skeema löytyy tiedostosta [schema.sql](./schema.sql). Pääset luomaan taulut tietokantaan:
 
 ```bash
 psql < schema.sql
 ```
 
-6) Tämän jälkeen pääset käynnistämään ohjelman virtuaaliympäristöstä:
+**7)** Tämän jälkeen pääset käynnistämään ohjelman virtuaaliympäristöstä:
 
 ```bash
 flask run
